@@ -177,7 +177,7 @@ class Home extends Component {
                         data-testid="searchButton"
                         theme={isDarkTheme}
                         type="button"
-                          onClick={()=> this.getHomeVideos()}
+                        onClick={()=> this.getHomeVideos()}
                       >
                         <AiOutlineSearch />
                       </SearchButton>
