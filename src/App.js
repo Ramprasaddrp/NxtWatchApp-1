@@ -71,7 +71,7 @@ class App extends Component {
           <ProtectedRoute exact path="/saved-videos" component={SavedVideos} />
           <ProtectedRoute exact path="/trending" component={TrendingVideos} />
           <ProtectedRoute exact path="/gaming" component={Gaming} />
-          <ProtectedRoute exact path="/bad-path" component={NotFound} />
+          <Route exact path="/bad-path" component={NotFound} />
           <Redirect to="/bad-path" />
         </Switch>
       </NxtThemeContext.Provider>
