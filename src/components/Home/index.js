@@ -83,9 +83,6 @@ class Home extends Component {
     }
   }
 
-  searchVideo = () => {
-    this.getHomeVideos()
-  }
 
   closeBanner = () => {
     this.setState({display: false})
@@ -168,7 +165,7 @@ class Home extends Component {
                     </CloseIcon>
                   </BannerContainer>
                   <MainContentContainer>
-                    <SearchContainer onSubmit={this.searchVideo}>
+                    <SearchContainer>
                       <SearchInputElement
                         theme={isDarkTheme}
                         type="search"
@@ -180,6 +177,7 @@ class Home extends Component {
                         data-testid="searchButton"
                         theme={isDarkTheme}
                         type="button"
+                          onClick={()=> this.getHomeVideos()}
                       >
                         <AiOutlineSearch />
                       </SearchButton>
